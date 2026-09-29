@@ -1,0 +1,95 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 100vh;
+    background: $fon;
+    margin: 0;
+    padding: 0;
+}
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: calc(100% - 130px);
+}
+.card-profile{
+    width: 440px;
+    min-width: 270px;
+    min-height: 540px;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid $border;
+    border-radius: 24px;
+    &__image{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    &__title{
+        font-family: 'Inter', sans-serif;
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: $dark;
+        margin-bottom: 0px;
+    }
+    &__speciality{
+        width: 120px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $indigo;
+        background-color: $ligh-indigo;
+        border-radius: 20px;
+    }
+    &__text{
+        font-family: 'Inter', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 200;
+        line-height: 167%;
+        color: $dark-gray;
+    }
+    &__line{
+        border: 1px solid $border;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__btn{
+        width: 100%;
+        max-width: 360px;
+        height: 46px;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $white;
+        background: $indigo;
+        border: none;
+        border-radius: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+    &__icon{
+        width: 18px;
+        height: 18px;
+    }
+}

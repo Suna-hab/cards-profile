@@ -1,0 +1,22 @@
+.footer{
+    width: 100%;
+    min-height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $border;
+    box-sizing: border-box;
+    padding: 0px 80px;
+    &__text{
+        font-family: 'Inter', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 200;
+        color: $gray;
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
